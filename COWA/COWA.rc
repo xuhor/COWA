@@ -1,0 +1,488 @@
+//Microsoft Developer Studio generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// Chinese (P.R.C.) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)
+#ifdef _WIN32
+LANGUAGE LANG_CHINESE, SUBLANG_CHINESE_SIMPLIFIED
+#pragma code_page(936)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#define _AFX_NO_SPLITTER_RESOURCES\r\n"
+    "#define _AFX_NO_OLE_RESOURCES\r\n"
+    "#define _AFX_NO_TRACKER_RESOURCES\r\n"
+    "#define _AFX_NO_PROPERTY_RESOURCES\r\n"
+    "\r\n"
+    "#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)\r\n"
+    "#ifdef _WIN32\r\n"
+    "LANGUAGE 4, 2\r\n"
+    "#pragma code_page(936)\r\n"
+    "#endif //_WIN32\r\n"
+    "#include ""res\\COWA.rc2""  // non-Microsoft Visual C++ edited resources\r\n"
+    "#include ""l.chs\\afxres.rc""          // Standard components\r\n"
+    "#endif\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDR_MAINFRAME           ICON    DISCARDABLE     "res\\COWA.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_ABOUTBOX DIALOG DISCARDABLE  0, 0, 235, 55
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "关于 COWA"
+FONT 9, "宋体"
+BEGIN
+    ICON            IDR_MAINFRAME,IDC_STATIC,11,17,20,20
+    LTEXT           "COWA 1.0 版",IDC_STATIC,40,10,119,8,SS_NOPREFIX
+    LTEXT           "版权所有 (C) 2013",IDC_STATIC,40,25,119,8
+    DEFPUSHBUTTON   "确定",IDOK,178,7,50,14,WS_GROUP
+END
+
+IDD_COWA_DIALOG DIALOGEX 0, 0, 312, 189
+STYLE DS_MODALFRAME | WS_MINIMIZEBOX | WS_POPUP | WS_VISIBLE | WS_CAPTION | 
+    WS_SYSMENU
+EXSTYLE WS_EX_APPWINDOW
+CAPTION "员工考勤记录"
+FONT 9, "宋体"
+BEGIN
+    CONTROL         131,IDC_BITMAP,"Static",SS_BITMAP,125,45,55,55
+    PUSHBUTTON      "退出",IDCANCEL,245,160,60,19
+    LTEXT           "考勤管理系统",IDC_COWA_STATIC,105,10,153,25
+    PUSHBUTTON      "时间设置",IDC_SetTime,30,115,60,20
+    PUSHBUTTON      "考勤记录",IDC_C_O_W_A,122,115,60,20
+    PUSHBUTTON      "统计",IDC_STATISTICS,214,115,60,20
+    LTEXT           "作者：张旭 2013.4.3",IDC_STATIC,10,170,80,15
+    DEFPUSHBUTTON   "重新登陆",IDC_RELOGIN,180,160,60,20
+END
+
+IDD_LOGIN_DIALOG DIALOG DISCARDABLE  0, 0, 164, 120
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "登陆"
+FONT 10, "宋体"
+BEGIN
+    DEFPUSHBUTTON   "登陆",IDOK,30,100,50,14
+    PUSHBUTTON      "取消",IDCANCEL,90,100,50,14
+    LTEXT           "考勤管理系统登陆",IDC_LOGIN_STATIC,36,14,101,18,NOT 
+                    WS_GROUP
+    LTEXT           "ODBC数据源:",IDC_STATIC,25,40,45,10
+    COMBOBOX        IDC_COMBO1,80,40,60,30,CBS_DROPDOWN | CBS_SORT | 
+                    WS_VSCROLL | WS_TABSTOP
+    LTEXT           "用户名:",IDC_STATIC,25,60,50,15
+    LTEXT           "密码:",IDC_STATIC,25,80,50,15
+    EDITTEXT        IDC_NAME_EDIT,80,55,60,15,ES_AUTOHSCROLL
+    EDITTEXT        IDC_PASSWORD_EDIT,80,75,60,15,ES_PASSWORD | 
+                    ES_AUTOHSCROLL
+END
+
+IDD_SET_DIALOG DIALOG DISCARDABLE  0, 0, 151, 111
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "工作时间设置"
+FONT 10, "宋体"
+BEGIN
+    LTEXT           "上午上班时间:",IDC_STATIC,15,13,50,15
+    LTEXT           "上午下班时间:",IDC_STATIC,14,30,50,15
+    LTEXT           "下午上班时间:",IDC_STATIC,14,50,50,15
+    LTEXT           "下午下班时间:",IDC_STATIC,14,70,50,15
+    CONTROL         "DateTimePicker1",IDC_AM_ON,"SysDateTimePick32",
+                    DTS_RIGHTALIGN | DTS_UPDOWN | WS_TABSTOP | 0x8,69,10,65,
+                    15
+    CONTROL         "DateTimePicker1",IDC_AM_OFF,"SysDateTimePick32",
+                    DTS_RIGHTALIGN | DTS_UPDOWN | WS_TABSTOP | 0x8,69,27,65,
+                    15
+    CONTROL         "DateTimePicker1",IDC_PM_ON,"SysDateTimePick32",
+                    DTS_RIGHTALIGN | DTS_UPDOWN | WS_TABSTOP | 0x8,69,47,65,
+                    15
+    CONTROL         "DateTimePicker1",IDC_PM_OFF,"SysDateTimePick32",
+                    DTS_RIGHTALIGN | DTS_UPDOWN | WS_TABSTOP | 0x8,69,67,65,
+                    15
+    GROUPBOX        "",IDC_STATIC,7,3,136,83
+    PUSHBUTTON      "修改",IDC_CHANGE,30,90,55,15
+    PUSHBUTTON      "恢复默认设置",IDC_RESET,90,90,54,15
+END
+
+IDD_RECORD_DIG DIALOG DISCARDABLE  0, 0, 295, 322
+STYLE DS_MODALFRAME | WS_MINIMIZEBOX | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "考勤记录"
+FONT 10, "宋体"
+BEGIN
+    CONTROL         "时间范围",IDC_CHECK_TIME,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,50,20,45,10
+    CONTROL         "员工",IDC_CHECK_CLERK,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,50,42,32,10
+    LTEXT           "从",IDC_STATIC,101,21,10,10
+    LTEXT           "至",IDC_STATIC,176,21,10,10
+    CONTROL         "DateTimePicker1",IDC_START_TIME,"SysDateTimePick32",
+                    DTS_RIGHTALIGN | WS_TABSTOP,116,17,50,15
+    CONTROL         "DateTimePicker1",IDC_END_TIME,"SysDateTimePick32",
+                    DTS_RIGHTALIGN | WS_TABSTOP,193,17,50,15
+    EDITTEXT        IDC_CLERK_ID,116,38,50,15,ES_AUTOHSCROLL
+    LTEXT           "员工号:",IDC_STATIC,85,41,30,11
+    LTEXT           "姓名:",IDC_STATIC,170,41,23,12
+    EDITTEXT        IDC_CLERKNAME,193,38,50,15,ES_AUTOHSCROLL | ES_READONLY
+    GROUPBOX        "检索条件",IDC_STATIC,32,7,228,57
+END
+
+IDD_ATTANDENCE_PAGE1 DIALOG DISCARDABLE  0, 0, 329, 250
+STYLE WS_CHILD | WS_DISABLED | WS_CAPTION
+CAPTION "添加修改出勤记录"
+FONT 9, "MS Sans Serif"
+BEGIN
+    LTEXT           "出入时间：",IDC_STATIC,7,11,40,12
+    EDITTEXT        IDC_IN_OUT_TIME,48,5,80,18,ES_AUTOHSCROLL
+    LTEXT           "部门缩写：",IDC_STATIC,138,11,43,14
+    EDITTEXT        IDC_DEPART_ID,182,5,38,17,ES_AUTOHSCROLL
+    EDITTEXT        IDC_DEPART_NAME,226,5,54,19,ES_AUTOHSCROLL | ES_READONLY
+    LTEXT           "员工号：",IDC_STATIC,7,40,36,12
+    LTEXT           "添加出勤记录",IDC_STATIC,7,71,53,12
+    EDITTEXT        IDC_CLERK_NUM,48,36,42,18,ES_AUTOHSCROLL
+    EDITTEXT        IDC_CLERK_NAME,99,36,56,18,ES_AUTOHSCROLL | ES_READONLY
+    GROUPBOX        "",IDC_IN_OUT,169,27,112,29,WS_GROUP
+    CONTROL         "出",IDC_OUT,"Button",BS_AUTORADIOBUTTON | WS_GROUP,177,
+                    36,44,16
+    CONTROL         "入",IDC_IN,"Button",BS_AUTORADIOBUTTON,229,36,44,16
+    CONTROL         "全部员工",IDC_ALL_CLERK,"Button",BS_AUTORADIOBUTTON | 
+                    WS_GROUP,83,65,48,18
+    CONTROL         "部门员工",IDC_DEPART_CLERK,"Button",BS_AUTORADIOBUTTON,
+                    134,65,48,18
+    CONTROL         "单个员工",IDC_SINGLE_CLERK,"Button",BS_AUTORADIOBUTTON,
+                    188,65,48,18
+    PUSHBUTTON      "添加",IDC_ADD_RECORD,254,65,61,19
+    GROUPBOX        "",IDC_SELECT_E,66,59,183,28,WS_GROUP
+    CONTROL         "List1",IDC_LIST1,"SysListView32",LVS_REPORT | WS_BORDER | 
+                    WS_TABSTOP,7,115,315,128
+    PUSHBUTTON      "按条件检索",IDC_CHECK_BY_C,248,91,67,18
+    PUSHBUTTON      "删除选中行",IDC_DELETE_RECORD,175,92,67,18
+    LTEXT           "出勤记录列表：",IDC_STATIC,7,97,59,12
+END
+
+IDD_OVERTIME_PAGE2 DIALOG DISCARDABLE  0, 0, 329, 249
+STYLE WS_CHILD | WS_DISABLED | WS_CAPTION
+CAPTION "加班记录"
+FONT 8, "MS Sans Serif"
+BEGIN
+    GROUPBOX        "添加记录",IDC_STATIC,7,5,315,68
+    LTEXT           "日期:",IDC_STATIC,13,22,25,10
+    LTEXT           "员工号:",IDC_STATIC,134,20,31,14
+    LTEXT           "加班时间:",IDC_STATIC,13,49,39,15
+    CONTROL         "DateTimePicker1",IDC_CUR_TIME,"SysDateTimePick32",
+                    DTS_RIGHTALIGN | WS_TABSTOP,42,17,60,19
+    EDITTEXT        IDC_CLERK_ID,168,17,60,20,ES_AUTOHSCROLL
+    LTEXT           "小时",IDC_STATIC,104,49,29,13
+    EDITTEXT        IDC_OVERTIME_HOURS,57,44,42,19,ES_AUTOHSCROLL
+    LTEXT           "员工姓名:",IDC_STATIC,129,49,36,13
+    EDITTEXT        IDC_CLERK_NAME,168,45,61,19,ES_AUTOHSCROLL | ES_READONLY
+    PUSHBUTTON      "添加",IDC_ADD_OVERTIME_R,247,30,60,24
+    CONTROL         "List1",IDC_OVERTIME_LIST,"SysListView32",LVS_REPORT | 
+                    WS_BORDER | WS_TABSTOP,7,105,315,137
+    PUSHBUTTON      "删除选中记录",IDC_DELETE_OVERTIM_R,204,79,53,19
+    PUSHBUTTON      "按条件检索",IDC_OVERTIMR_SEARCH,269,79,53,19
+    LTEXT           "加班记录列表:",IDC_STATIC,7,90,56,12
+END
+
+IDD_LEAVE_PAGE3 DIALOG DISCARDABLE  0, 0, 329, 249
+STYLE WS_CHILD | WS_DISABLED | WS_CAPTION
+CAPTION "请假记录"
+FONT 8, "MS Sans Serif"
+BEGIN
+    GROUPBOX        "添加记录",IDC_STATIC,5,5,320,87
+    LTEXT           "请假时间：",IDC_STATIC,13,22,44,15
+    EDITTEXT        IDC_L_START_TIME,59,18,74,19,ES_AUTOHSCROLL
+    LTEXT           "至",IDC_STATIC,142,22,17,15
+    EDITTEXT        IDC_L_END_TIME,160,18,79,19,ES_AUTOHSCROLL
+    LTEXT           "员工号：",IDC_STATIC,13,52,32,16
+    LTEXT           "员工姓名：",IDC_STATIC,128,52,40,16
+    EDITTEXT        IDC_L_CLERK_ID,59,45,58,20,ES_AUTOHSCROLL
+    EDITTEXT        IDC_L_CLERK_NAME,175,45,63,20,ES_AUTOHSCROLL | 
+                    ES_READONLY
+    LTEXT           "请假原因：",IDC_STATIC,255,19,40,13
+    EDITTEXT        IDC_LEAVE_REASON,251,32,64,56,ES_AUTOHSCROLL
+    PUSHBUTTON      "添加",IDC_ADD_L_RECORD,122,68,64,20
+    CONTROL         "List1",IDC_LEAVE_LIST,"SysListView32",LVS_REPORT | 
+                    WS_BORDER | WS_TABSTOP,7,119,315,123
+    PUSHBUTTON      "删除所选记录",IDC_DELETE_L_RECORD,185,97,65,18
+    PUSHBUTTON      "条件检索",IDC_LEAVE_CHECK,257,97,65,18
+    LTEXT           "请假记录列表：",IDC_STATIC,5,105,60,10
+END
+
+IDD_BUS_TRIP_PAGE4 DIALOG DISCARDABLE  0, 0, 329, 249
+STYLE WS_CHILD | WS_DISABLED | WS_CAPTION
+CAPTION "出差记录"
+FONT 8, "MS Sans Serif"
+BEGIN
+    GROUPBOX        "添加记录",IDC_STATIC,5,5,320,87
+    LTEXT           "请假时间：",IDC_STATIC,13,22,44,15
+    EDITTEXT        IDC_B_T_START_TIME,59,18,74,19,ES_AUTOHSCROLL
+    LTEXT           "至",IDC_STATIC,142,22,17,15
+    EDITTEXT        IDC_B_T_END_TIME,160,18,79,19,ES_AUTOHSCROLL
+    LTEXT           "员工号：",IDC_STATIC,13,52,32,16
+    LTEXT           "员工姓名：",IDC_STATIC,128,52,40,16
+    EDITTEXT        IDC_B_T_CLERK_ID,59,45,58,20,ES_AUTOHSCROLL
+    EDITTEXT        IDC_B_T_CLERK_NAME,175,45,63,20,ES_AUTOHSCROLL | 
+                    ES_READONLY
+    EDITTEXT        IDC_B_T_DESCRIPTION,251,32,64,56,ES_AUTOHSCROLL
+    PUSHBUTTON      "添加",IDC_ADD_B_T_RECORD,122,68,64,20
+    LTEXT           "具体描述：",IDC_STATIC,250,20,55,10
+    PUSHBUTTON      "删除所选记录",IDC_DELETE_B_T_RECORD,185,97,65,18
+    PUSHBUTTON      "条件检索",IDC_B_T_CHECK,257,97,65,18
+    LTEXT           "出差记录列表：",IDC_STATIC,5,105,60,10
+    CONTROL         "List1",IDC_B_T_LIST,"SysListView32",LVS_REPORT | 
+                    WS_BORDER | WS_TABSTOP,7,119,315,123
+END
+
+IDD_STATISTICS DIALOG DISCARDABLE  0, 0, 327, 249
+STYLE DS_MODALFRAME | WS_MINIMIZEBOX | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "考勤统计"
+FONT 9, "宋体"
+BEGIN
+    GROUPBOX        "月度统计",IDC_STATIC,5,5,315,63
+    GROUPBOX        "条件检索",IDC_STATIC,5,73,315,66
+    CONTROL         "年月",IDC_S_Y_M_CHECK,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,10,90,35,15
+    CONTROL         "员工",IDC_S_C_CHECK,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,10,115,35,15
+    EDITTEXT        IDC_S_CLERK_ID,86,115,59,16,ES_AUTOHSCROLL
+    LTEXT           "员工号:",IDC_STATIC,49,120,30,12
+    LTEXT           "姓名:",IDC_STATIC,149,118,27,13
+    EDITTEXT        IDC_S_CLERK_NAME,177,115,59,16,ES_AUTOHSCROLL | 
+                    ES_READONLY
+    EDITTEXT        IDC_YEAR_MONTH,50,90,82,15,ES_AUTOHSCROLL
+    PUSHBUTTON      "检索",IDC_S_CHECK,250,99,59,19
+    CONTROL         "List1",IDC_S_LIST,"SysListView32",LVS_REPORT | 
+                    WS_BORDER | WS_TABSTOP,7,145,313,97
+    LTEXT           "时间范围",IDC_STATIC,15,43,35,10
+    LTEXT           "统计年月",IDC_STATIC,15,20,35,10
+    EDITTEXT        IDC_STAT_EDT_TIME,55,15,60,17,ES_AUTOHSCROLL
+    LTEXT           "从",IDC_STATIC,60,41,15,13
+    LTEXT           "到",IDC_STATIC,145,40,13,13
+    CONTROL         "DateTimePicker1",IDC_STARTTIME,"SysDateTimePick32",
+                    DTS_RIGHTALIGN | WS_TABSTOP,79,37,60,17
+    CONTROL         "DateTimePicker1",IDC_ENDTIME,"SysDateTimePick32",
+                    DTS_RIGHTALIGN | WS_TABSTOP,165,38,60,17
+    PUSHBUTTON      "统计",IDC_BeginToStat,245,22,52,19
+    LTEXT           "",IDC_PROCRSS,240,49,63,15
+END
+
+
+#ifndef _MAC
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 1,0,0,1
+ PRODUCTVERSION 1,0,0,1
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "080404B0"
+        BEGIN
+            VALUE "CompanyName", "\0"
+            VALUE "FileDescription", "COWA Microsoft 基础类应用程序\0"
+            VALUE "FileVersion", "1, 0, 0, 1\0"
+            VALUE "InternalName", "COWA\0"
+            VALUE "LegalCopyright", "版权所有 (C) 2013\0"
+            VALUE "LegalTrademarks", "\0"
+            VALUE "OriginalFilename", "COWA.EXE\0"
+            VALUE "ProductName", "COWA 应用程序\0"
+            VALUE "ProductVersion", "1, 0, 0, 1\0"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x804, 1200
+    END
+END
+
+#endif    // !_MAC
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO DISCARDABLE 
+BEGIN
+    IDD_ABOUTBOX, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 228
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 48
+    END
+
+    IDD_COWA_DIALOG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 305
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 182
+    END
+
+    IDD_LOGIN_DIALOG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 157
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 113
+    END
+
+    IDD_SET_DIALOG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 144
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 104
+    END
+
+    IDD_RECORD_DIG, DIALOG
+    BEGIN
+        RIGHTMARGIN, 290
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 310
+    END
+
+    IDD_ATTANDENCE_PAGE1, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 322
+        TOPMARGIN, 5
+        BOTTOMMARGIN, 243
+    END
+
+    IDD_OVERTIME_PAGE2, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 322
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 242
+    END
+
+    IDD_LEAVE_PAGE3, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 322
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 242
+    END
+
+    IDD_BUS_TRIP_PAGE4, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 322
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 242
+    END
+
+    IDD_STATISTICS, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 320
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 242
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Bitmap
+//
+
+IDB_BITMAP1             BITMAP  DISCARDABLE     "res\\attendance.bmp"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_ABOUTBOX            "关于 COWA(&A)..."
+END
+
+#endif    // Chinese (P.R.C.) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#define _AFX_NO_SPLITTER_RESOURCES
+#define _AFX_NO_OLE_RESOURCES
+#define _AFX_NO_TRACKER_RESOURCES
+#define _AFX_NO_PROPERTY_RESOURCES
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)
+#ifdef _WIN32
+LANGUAGE 4, 2
+#pragma code_page(936)
+#endif //_WIN32
+#include "res\COWA.rc2"  // non-Microsoft Visual C++ edited resources
+#include "l.chs\afxres.rc"          // Standard components
+#endif
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

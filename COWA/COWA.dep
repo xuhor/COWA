@@ -1,0 +1,22 @@
+# Microsoft Developer Studio Generated Dependency File, included by COWA.mak
+
+.\COWA.cpp : \
+	".\COWA.h"\
+	".\COWADlg.h"\
+	".\StdAfx.h"\
+	
+
+.\COWA.rc : \
+	".\res\COWA.ico"\
+	".\res\COWA.rc2"\
+	
+
+.\COWADlg.cpp : \
+	".\COWA.h"\
+	".\COWADlg.h"\
+	".\StdAfx.h"\
+	
+
+.\StdAfx.cpp : \
+	".\StdAfx.h"\
+	

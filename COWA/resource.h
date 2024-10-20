@@ -1,0 +1,119 @@
+//{{NO_DEPENDENCIES}}
+// Microsoft Developer Studio generated include file.
+// Used by COWA.rc
+//
+#define IDM_ABOUTBOX                    0x0010
+#define IDD_ABOUTBOX                    100
+#define IDS_ABOUTBOX                    101
+#define IDD_COWA_DIALOG                 102
+#define IDD_ATTANDENCE_PAGE1            107
+#define IDR_MAINFRAME                   128
+#define IDD_LOGIN_DIALOG                129
+#define IDB_BITMAP1                     131
+#define IDD_SET_DIALOG                  132
+#define IDD_RECORD_DIG                  133
+#define IDD_OVERTIME_PAGE2              134
+#define IDD_LEAVE_PAGE3                 135
+#define IDD_BUS_TRIP_PAGE4              136
+#define IDD_STATISTICS                  137
+#define IDC_COMBO1                      1000
+#define IDC_NAME_EDIT                   1001
+#define IDC_PASSWORD_EDIT               1002
+#define IDC_COWA_STATIC                 1003
+#define IDC_SetTime                     1004
+#define IDC_LOGIN_STATIC                1005
+#define IDC_C_O_W_A                     1005
+#define IDC_BUTTON3                     1006
+#define IDC_STATISTICS                  1006
+#define IDC_RELOGIN                     1008
+#define IDC_BITMAP                      1010
+#define IDC_AM_ON                       1012
+#define IDC_AM_OFF                      1013
+#define IDC_PM_ON                       1014
+#define IDC_PM_OFF                      1015
+#define IDC_CHANGE                      1016
+#define IDC_RESET                       1017
+#define IDC_CHECK1                      1018
+#define IDC_CHECK_TIME                  1018
+#define IDC_S_Y_M_CHECK                 1018
+#define IDC_CHECK2                      1019
+#define IDC_CHECK_CLERK                 1019
+#define IDC_S_C_CHECK                   1019
+#define IDC_DATETIMEPICKER1             1020
+#define IDC_START_TIME                  1020
+#define IDC_CUR_TIME                    1020
+#define IDC_STARTTIME                   1020
+#define IDC_DATETIMEPICKER2             1021
+#define IDC_END_TIME                    1021
+#define IDC_ENDTIME                     1021
+#define IDC_EDIT1                       1022
+#define IDC_IN_OUT_TIME                 1022
+#define IDC_L_START_TIME                1022
+#define IDC_YEAR_MONTH                  1022
+#define IDC_EDIT2                       1023
+#define IDC_DEPART_ID                   1023
+#define IDC_OVERTIME_HOURS              1023
+#define IDC_L_END_TIME                  1023
+#define IDC_STAT_EDT_TIME               1023
+#define IDC_EDIT3                       1024
+#define IDC_DEPART_NAME                 1024
+#define IDC_L_CLERK_ID                  1024
+#define IDC_EDIT4                       1025
+#define IDC_CLERK_NUM                   1025
+#define IDC_L_CLERK_NAME                1025
+#define IDC_EDIT5                       1026
+#define IDC_LEAVE_REASON                1026
+#define IDC_OUT                         1027
+#define IDC_IN                          1028
+#define IDC_RADIO3                      1030
+#define IDC_ALL_CLERK                   1030
+#define IDC_BUTTON2                     1031
+#define IDC_ADD_RECORD                  1031
+#define IDC_DELETE_OVERTIM_R            1031
+#define IDC_DELETE_L_RECORD             1031
+#define IDC_BeginToStat                 1031
+#define IDC_RADIO4                      1032
+#define IDC_DEPART_CLERK                1032
+#define IDC_OVERTIMR_SEARCH             1032
+#define IDC_LEAVE_CHECK                 1032
+#define IDC_RADIO5                      1033
+#define IDC_SINGLE_CLERK                1033
+#define IDC_LIST1                       1034
+#define IDC_IN_OUT                      1035
+#define IDC_SELECT_E                    1036
+#define IDC_BUTTON1                     1037
+#define IDC_CHECK_BY_C                  1037
+#define IDC_ADD_OVERTIME_R              1037
+#define IDC_ADD_L_RECORD                1037
+#define IDC_S_CHECK                     1037
+#define IDC_BUTTON4                     1038
+#define IDC_CLERK_ID                    1038
+#define IDC_DELETE_RECORD               1038
+#define IDC_CLERK_NAME                  1039
+#define IDC_CLERKNAME                   1040
+#define IDC_OVERTIME_LIST               1041
+#define IDC_LEAVE_LIST                  1043
+#define IDC_B_T_START_TIME              1044
+#define IDC_B_T_END_TIME                1045
+#define IDC_B_T_DESCRIPTION             1046
+#define IDC_B_T_CLERK_ID                1047
+#define IDC_B_T_CLERK_NAME              1048
+#define IDC_ADD_B_T_RECORD              1049
+#define IDC_DELETE_B_T_RECORD           1050
+#define IDC_B_T_LIST                    1051
+#define IDC_B_T_CHECK                   1052
+#define IDC_S_LIST                      1053
+#define IDC_S_CLERK_ID                  1054
+#define IDC_S_CLERK_NAME                1055
+#define IDC_PROCRSS                     1056
+
+// Next default values for new objects
+// 
+#ifdef APSTUDIO_INVOKED
+#ifndef APSTUDIO_READONLY_SYMBOLS
+#define _APS_NEXT_RESOURCE_VALUE        138
+#define _APS_NEXT_COMMAND_VALUE         32771
+#define _APS_NEXT_CONTROL_VALUE         1057
+#define _APS_NEXT_SYMED_VALUE           101
+#endif
+#endif
