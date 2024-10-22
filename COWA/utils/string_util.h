@@ -15,9 +15,7 @@ using namespace std;
 #define string_t string
 #endif
 
-//#define CODE_CONVERT_USE_CPP11
 #define CODE_CONVERT_USE_WIN32
-//#define CODE_CONVERT_USE_ICONV
 
 class string_util
 {
@@ -25,5 +23,7 @@ public:
 	string_util();
 	~string_util();
 
+public:
+	static std::string& trim_l(std::string &str);
 };
 
