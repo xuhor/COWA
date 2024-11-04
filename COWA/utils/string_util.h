@@ -35,5 +35,6 @@ public:
 	static std::string to_upper_copy(std::string &str);
 
 	static std::string& to_lower(std::string &str);
+	static std::string to_lower_copy(std::string &str);
 };
 
