@@ -26,6 +26,32 @@ std::string& string_util::trim_r(std::string &str)
 	return str;
 }
 
+std::string string_util::mid_l_r(std::string &str, std::string str_left, std::string str_right, bool b_inc_start, bool b_inc_end)
+{
+	if (str.size() <= 0 || str_left.size() <= 0 || str_right.size() <= 0 || str.size() < str_left.size() || str.size() < str_right.size()) return "";
+
+	std::string str_ret;
+	std::string::size_type pos_begin = str.find(str_left);
+	if (pos_begin != std::string::npos)
+	{
+		if (!b_inc_start) pos_begin += str_left.size();
+
+		std::string::size_type pos_end = str.find(str_right, pos_begin + 1);
+		if (pos_end != std::string::npos)
+		{
+			if (!b_inc_end)
+			{
+				str_ret = str.substr(pos_begin, pos_end - pos_begin);
+			}
+			else{
+				pos_end += str_right.size();
+				str_ret = str.substr(pos_begin, pos_end - pos_begin);
+			}
+		}
+	}
+
+	return str_ret;
+}
 std::string& string_util::trim(std::string &str)
 {
 	return trim_l(trim_r(str));
