@@ -51,5 +51,6 @@ public:
 
 	static std::string format(const std::string fmt, ...);
 	static std::string& append_format(std::string& str, const std::string fmt, ...);
+	static std::string& erase(std::string& str, char ch);
 };
 
